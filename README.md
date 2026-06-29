@@ -1,3 +1,11 @@
+## Hint
+
+Please change branch to [Bunker-DVI-Dataset-reg-1](https://github.com/MapsHD/benchmark-DALI_SLAM-to-HDMapping/tree/Bunker-DVI-Dataset-reg-1) for quick experiment.
+
+## Example Dataset:
+
+Download the dataset from [Bunker DVI Dataset](https://charleshamesse.github.io/bunker-dvi-dataset/)
+
 # benchmark-DALI-SLAM-to-HDMapping
 
 Runs the [DALI-SLAM](https://github.com/DCSI2022/DALI_SLAM) degeneracy-aware
