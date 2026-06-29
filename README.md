@@ -6,13 +6,13 @@ Please change branch to [Bunker-DVI-Dataset-reg-1](https://github.com/MapsHD/ben
 
 Download the dataset from [Bunker DVI Dataset](https://charleshamesse.github.io/bunker-dvi-dataset/)
 
-# benchmark-DALI-SLAM-to-HDMapping
+# benchmark-DALI_SLAM-to-HDMapping
 
-Runs the [DALI-SLAM](https://github.com/DCSI2022/DALI_SLAM) degeneracy-aware
+Runs the [DALI_SLAM](https://github.com/DCSI2022/DALI_SLAM) degeneracy-aware
 LiDAR-inertial odometry front-end (**DA-LIO**) on a ROS 1 bag file and converts
 the output to an [HDMapping](https://github.com/MapsHD/HDMapping) session.
 
-DALI-SLAM is *Degeneracy-Aware LiDAR-inertial SLAM with novel distortion
+DALI_SLAM is *Degeneracy-Aware LiDAR-inertial SLAM with novel distortion
 correction and accurate multi-constraint pose graph optimization* by Wu et al.,
 ISPRS Journal of Photogrammetry and Remote Sensing, 2025
 ([paper](https://www.sciencedirect.com/science/article/pii/S0924271625000413)).
@@ -30,8 +30,8 @@ DA-LIO is FAST-LIO2-based.
 ## Step 1 — Clone with submodules
 
 ```bash
-git clone https://github.com/MapsHD/benchmark-DALI-SLAM-to-HDMapping.git --recursive
-cd benchmark-DALI-SLAM-to-HDMapping
+git clone https://github.com/MapsHD/benchmark-DALI_SLAM-to-HDMapping.git --recursive
+cd benchmark-DALI_SLAM-to-HDMapping
 ```
 
 ## Step 2 — Build the Docker image
@@ -112,7 +112,7 @@ HDMapping session format.
 
 ## Step 4 — Open in HDMapping
 
-Output files appear in `<output_dir>/output_hdmapping-DALI-SLAM/`:
+Output files appear in `<output_dir>/output_hdmapping-DALI_SLAM/`:
 
 ```
 lio_initial_poses.reg
@@ -149,7 +149,7 @@ per-chunk trajectory files. The recorded topics are tunable via env vars:
 | `CLOUD_TOPIC` | DA-LIO registered cloud (world)   | `/cloud_registered` |
 
 This benchmark captures DA-LIO's **online** odometry output, consistent with the
-other LIO benchmarks in this repo. DALI-SLAM's MC-PGO back-end (offline
+other LIO benchmarks in this repo. DALI_SLAM's MC-PGO back-end (offline
 multi-constraint pose graph optimization) is a separate stage and is not part of
 the recorded session.
 
